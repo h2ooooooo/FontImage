@@ -455,7 +455,7 @@
 					//Enable alpha blending again before output
 					imagealphablending($imageGDHandle, true);
 				}
-				imagettftext($imageGDHandle, $this->fontSize, $this->fontAngle, 0, $this->fontSize + ($this->fontSize / 5), $textColour, $fontPath, $text);
+				imagettftext($imageGDHandle, $this->fontSize, $this->fontAngle, 0, $this->fontSize, $textColour, $fontPath, $text);
 				
 				if ($this->cacheEnabled) {
 					imagepng($imageGDHandle, $cachePath);
